@@ -156,6 +156,11 @@ def main_program_loop():
         desc.send_keys(loop_description)
         time.sleep(0.5)
 
+     #   supply = driver.find_element_by_xpath('//*[@id="supply"]')
+     #   supply.send_keys(00)
+     #   time.sleep(0.5)
+        
+
         # Select Polygon blockchain if applicable
         if is_polygon.get():
             blockchain_button = driver.find_element(By.XPATH, '//*[@id="__next"]/div[1]/main/div/div/section/div/form/div[7]/div/div[2]')
@@ -189,9 +194,9 @@ def main_program_loop():
         listing = driver.find_element_by_css_selector("button[type='submit']")
         listing.click()
         time.sleep(5)
-        
-        wait_css_selector("button[class='Blockreact__Block-sc-1xf18x6-0 Buttonreact__StyledButton-sc-glfma3-0 bhqEJb fzwDgL']")
-        sign = driver.find_element_by_css_selector("button[class='Blockreact__Block-sc-1xf18x6-0 Buttonreact__StyledButton-sc-glfma3-0 bhqEJb fzwDgL']")
+                                       
+        wait_css_selector("button[class='Blockreact__Block-sc-1xf18x6-0 Buttonreact__StyledButton-sc-glfma3-0 kXZare fzwDgL']")
+        sign = driver.find_element_by_css_selector("button[class='Blockreact__Block-sc-1xf18x6-0 Buttonreact__StyledButton-sc-glfma3-0 kXZare fzwDgL']")
         sign.click()
         time.sleep(2)
         
